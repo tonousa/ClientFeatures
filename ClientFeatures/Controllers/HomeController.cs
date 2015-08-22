@@ -16,13 +16,13 @@ namespace ClientFeatures.Controllers
         {
             return View(new Appointment
             {
-                ClientName = "Adam"j,
+                ClientName = "Adam",
                 Date = DateTime.Now.AddDays(2),
                 TermsAccepted = true
             });
         }
 
-        [HttpDelete]
+        [HttpPost]
         public JsonResult MakeBooking(Appointment appt)
         {
             // Code to store appt in repository
